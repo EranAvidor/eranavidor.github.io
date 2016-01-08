@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My github page</title>
-</head>
-<body>
-  Hello World!
-</body>
+    <head>
+    	<title>My github page</title>
+        <script type="text/javascript">
+            function test() {
+                var insertedVal = document.getElementById('field_n').value;
+                var n = Math.abs(parseInt(insertedVal) || 0);
+				document.getElementById('field_n').value = n;
+				var res = function getAlivePosition(n){
+					return ([0,1].indexOf(n) > -1) ? n : ( 2*getAlivePosition(Math.floor(n/2)) + 2*(n%2)-1 );
+                }(n);
+                document.getElementById('field_res').value = res;
+            }
+        </script>
+    </head>
+    <body>
+    	Hello World!
+    	<br>
+        Amount: <input id="field_n">
+        <input type="button" value="Where?" onclick="test()">
+        <br>
+        Where to stand: <input id="field_res" type="text">
+    </body>
 </html>
