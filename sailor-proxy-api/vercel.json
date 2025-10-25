@@ -1,0 +1,9 @@
+{
+  "buildCommand": "echo 'No build needed'",
+  "outputDirectory": ".",
+  "functions": {
+    "api/sailor-proxy.js": {
+      "maxDuration": 30
+    }
+  }
+}

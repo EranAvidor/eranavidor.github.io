@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הפלגות סיילור</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>הפלגות סיילור</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="filters">
+            <div class="filter-group">
+                <label>בחר סניפים:</label>
+                <div id="branch-checkboxes" class="checkbox-group">
+                    <!-- checkboxes will be populated dynamically -->
+                </div>
+            </div>
+            <div class="filter-group">
+                <label>בחר קטגוריות:</label>
+                <div id="category-checkboxes" class="checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="תלמידים" checked>
+                        <span>הפלגות תלמידים</span>
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" value="טרום מעשי" checked>
+                        <span>הפלגות טרום מעשי</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div id="events-container">
+            <!-- Events will be injected here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
